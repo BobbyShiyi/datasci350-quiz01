@@ -30,3 +30,96 @@ mkdir scripts/archive && cp scripts/*.py scripts/archive/
 
 Task 7 
 rm docs/notes.md
+
+Task 8
+git add .
+git commit -m "Update station files"
+
+Task 9
+touch .gitignore
+echo "temp/" >> .gitignore
+echo "log?.txt" >> .gitignore
+
+Task 10
+cat .gitignore
+
+Task 11
+git add .gitignore && git commit -m "Add gitignore"
+
+Task 12
+touch log{1..4}.txt
+
+Task 13
+git status
+
+Output: 
+On branch station-upgrade
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Explanation: The log files do not appear because the .gitignore pattern log?.txt ignores files with exactly one character between log and .txt.
+
+Task 14
+cat data/station-data.csv | wc -l >> results/summary.md
+
+Task 15
+Open the scripts/03-plot.py
+add the comment at the top
+git diff
+output:
+(base) jayhu@hushiyideMacBook-Air-2 datasci350-quiz01 % git diff
+diff --git a/commands.txt b/commands.txt
+index 7978cbe..24508a5 100644
+--- a/commands.txt
++++ b/commands.txt
+@@ -30,3 +30,42 @@ mkdir scripts/archive && cp scripts/*.py scripts/archive/
+ 
+ Task 7 
+ rm docs/notes.md
++
++Task 8
++git add .
++git commit -m "Update station files"
++
++Task 9
++touch .gitignore
++echo "temp/" >> .gitignore
++echo "log?.txt" >> .gitignore
++
++Task 10
++cat .gitignore
++
++Task 11
++git add .gitignore && git commit -m "Add gitignore"
++
++Task 12
++touch log{1..4}.txt
++
++Task 13
++git status
++
++Output: 
++On branch station-upgrade
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   commands.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++Explanation: The log files do not appear because the .gitignore pattern log?.txt ignores files with exactly one character between log and .txt.
++
++Task 14
++cat data/station-data.csv | wc -l >> results/summary.md
+
+Explanation:
+Lines starting with + are lines that were added in the new version of the file.
+
+Task 16
+git add .
+git commit -m "Update analyss"
+
