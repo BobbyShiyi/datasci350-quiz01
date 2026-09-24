@@ -126,8 +126,32 @@ Task 17
 git commit --amend -m "Update analysis"
 
 Task 18
+git switch main # refuses
+git add commands.txt && git commit -m "Update command log before merge"
 git switch main
+git merge station-upgrade
+git merge station-upgrade
+
 Task 19
+git log --oneline 
+
+Outout:
+4a3ae06 (HEAD -> main, station-upgrade) Update command log before merge
+e089863 Update analysis
+e4bd388 Add gitignore
+d393e79 Update station files
+de07588 Add results directory
+a22b29e (origin/main, origin/HEAD) docs(readme): note committing commands.txt before task 18 and force push for bonus 2
+b645f85 feat: quiz 01 starter files
 
 Task 20
+git add commands.txt
+git commit -m "Add command log"
+git push
 
+Bonus Task 1
+1. Opened my fork BobbyShiyi/datasci350-quiz01 on GitHub.
+2. Clicked Contribute and Open pull request.
+3. Set the base repository to danilofreire/datasci350-quiz01, branch main.
+4. Set the head repository to BobbyShiyi/datasci350-quiz01, branch main.
+5. Created the pull request.
