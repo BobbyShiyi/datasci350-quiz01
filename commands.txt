@@ -1,0 +1,32 @@
+Task 1
+cd DS350/Quiz
+pwd
+cd DS350_Quiz
+git clone https://github.com/BobbyShiyi/datasci350-quiz01.git
+cd datasci350-quiz01
+touch commands.txt
+pwd
+git status
+git branch
+git remote -v
+git switch -c station-upgrade
+
+Task 2
+mkdir -p results
+
+Task 3
+touch results/summary.md
+echo "Analysis of the first field season." >> results/summary.md
+
+Task 4
+git add results
+git commit -m "Add results directory"
+
+Task 5
+mv data/sensor-readings.csv data/station-data.csv
+
+Task 6
+mkdir scripts/archive && cp scripts/*.py scripts/archive/
+
+Task 7 
+rm docs/notes.md
