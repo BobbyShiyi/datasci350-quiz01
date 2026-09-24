@@ -155,3 +155,11 @@ Bonus Task 1
 3. Set the base repository to danilofreire/datasci350-quiz01, branch main.
 4. Set the head repository to BobbyShiyi/datasci350-quiz01, branch main.
 5. Created the pull request.
+
+Bonus task 2
+
+GIT_SEQUENCE_EDITOR=nano git rebase -i HEAD~2 
+#For this line, I relied on AI. I learned how to navigate inside function step by step.
+
+git log --oneline
+git push --force
